@@ -5,79 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health & Fitness Survey Form</title>
-    <link rel="stylesheet" href="styless.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="heading">
     <h1 id="title">Health and Fitness Survey</h1>
      <p id="description">Please fill out the following survey to help us understand your health and fitness goals and needs.</p>
-      <form id="survey-form">
-        <label id="name-label">Name
-            <input id="name" type="text" placeholder="Enter your name" required>
-        </label>
-        <label id="email-label">Email
-            <input id="email" type="email" placeholder="Enter your email" required>
-        </label>
-        <label id="number-label">Age
-            <input id="number" min="18" max="100" type="number" placeholder="Enter your age" required>
-        </label>
-        <label>Gender
-            <select id="dropdown" name="gender" required>
-                <option value="">Select an option</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-        </label>
+    </div>
+     <div class="container">
+        <form id="survey-form">
+            <div class="input-element">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            
+                <label id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            
+                <label id="number-label">Age</label>
+                <input id="number" min="18" max="100" type="number" placeholder="Enter your age" required>
+            
+                <label>Gender</label>
+                <select id="dropdown" name="gender" required>
+                    <option value="">Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
 
         <fieldset>
             <legend>How often do you exercise?</legend>
-            <label>
+            <label></label>
                 <input type="radio" name="exercise-frequency" value="one-day" required>1-2 days a week
-            </label>
-            <label>
+
+            <label></label>
                 <input type="radio" name="exercise-frequency" value="three-day">3-4 days a week
-            </label>
-            <label>
+
+            <label></label>
                 <input type="radio" name="exercise-frequency" value="five-day">5-6 days a week
-            </label>
-            <label>
+
+            <label></label>
                 <input type="radio" name="exercise-frequency" value="everyday">Everyday
-            </label>
-            <label>
+
+            <label></label>
                 <input type="radio" name="exercise-frequency" value="never">I dont exercise
-            </label>
         </fieldset>
 
         <fieldset>
             <legend>How would you describe your energy levels</legend>
-         <label>
+
+         <label></label>
             <input type="radio" name="energy-level" value="Ok" required>Ok
-         </label>
-         <label>
+
+         <label></label>
             <input type="radio" name="energy-level" value="excellent">Excellent
-         </label>
-         <label>
+
+         <label></label>
             <input type="radio" name="energy-level" value="lethargic">Lethargic
-         </label>
         </fieldset>
 
         <fieldset>
             <legend>What type of exercises you do</legend>
-            <label>
+            <label></label>
                 <input type="checkbox" name="exercise-types" value="cardio" required>Cardio
-            </label>
-            <label>
+
+            <label></label>
                 <input type="checkbox" name="exercise-types" value="strenght">Strenght Training
-            </label>
-            <label>
+
+            <label></label>
                 <input type="checkbox" name="exercise-types" value="yoga">Yoga
-            </label>
-            <label>Other
+
+            <label>Other</label>
                 <textarea id="other-exercise" name="other-exercise" placeholder="other"></textarea>
-            </label>
         </fieldset>
 
         <button type="submit" id="submit">Submit</button>
       </form>
+    </div> 
 </body>
 </html>
